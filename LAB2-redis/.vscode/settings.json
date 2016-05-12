@@ -1,0 +1,8 @@
+// Place your settings in this file to overwrite default and user settings.
+{
+        // Controls visibility of the glyph margin
+    "editor.glyphMargin": true,
+        // Controls the delay in ms after which quick suggestions will show up
+    "editor.quickSuggestionsDelay": 15,
+    
+}
