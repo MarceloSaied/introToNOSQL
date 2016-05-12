@@ -1,0 +1,15 @@
+extends layout
+
+block content
+	h1 New Post 
+	
+	form(name="Add Post", method="post")
+		div.input
+			span.label Post Title 
+			input(type="text", name="title", placeholder="Enter the post title")
+		div.input
+			span.label Message  
+		div.input
+			textarea(rows="10", cols="80", name="post_body")
+		div.actions
+			input(type="submit", value="Submit")

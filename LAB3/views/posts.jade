@@ -1,0 +1,16 @@
+extends layout
+
+block content
+	h1 All Posts 
+	
+	h3 <a href="/">Back to Home Page</a>
+	
+	table		
+		- each post in posts						
+			tr
+				
+				td(style='width: ' + 100/1 + '%')
+					<a href="/posts/#{post._id}">#{post.title}</a>
+				td= post.owner	
+					
+								

@@ -1,0 +1,12 @@
+extends layout
+
+block content
+	h1 Response to Post (Post Id - #{postId})
+		
+	form(name="Add Response", method="post")
+		div.input
+			span.label Response  
+		div.input
+			textarea(rows="10", cols="80", name="resp_body")    	
+		div.actions
+			input(type="submit", value="Submit")

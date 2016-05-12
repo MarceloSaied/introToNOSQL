@@ -1,0 +1,12 @@
+extends layout
+
+block content
+	h1 Comment to Post (Post Id #{postId})
+	
+	form(name="Add Comment", method="post")
+		div.input
+			span.label Comment  
+		div.input  
+			textarea(rows="10", cols="80", name="comm_body")
+		div.actions
+			input(type="submit", value="Submit")

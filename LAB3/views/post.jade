@@ -1,0 +1,23 @@
+extends layout
+
+block content				
+
+	table
+		
+		tr
+				
+			td(style='width: ' + 50/2 + '%')
+				<a href="/response/#{post._id}">Respond</a>
+			td(style='width: ' + 50/2 + '%')
+				<a href="/comment/#{post._id}">Comment</a>	
+			td(style='width: ' + 50/2 + '%')
+				<a href="/posts">All Posts</a>			
+			td(style='width: ' + 50/2 + '%')
+				<a href="/">Home Page</a>						
+				
+				
+	h1 #{post.title}
+		
+	p!=  post.body
+
+	h3 <a href="/jsonpost/#{post._id}">View the entire document (Post and its Responses/Comments) in JSON format</a>
