@@ -16,8 +16,7 @@ app.set('view engine', 'hjs');
 app.use(express.static(path.join(__dirname, 'static')));
 
 /* We're using ioredis, the currently recommended fast client
- * check https://github.com/luin/ioredis for details
- */
+ * check https://github.com/luin/ioredis for details */
 var redis = new Redis(6379, "127.0.0.1", {
     showFriendlyErrorStack: true,
     retryStrategy: function (times) {
@@ -29,10 +28,8 @@ var redis = new Redis(6379, "127.0.0.1", {
     }
 });
 
-/*
- * Here on "/" we simply want to LIST all blog entries 
- * we have...
- */
+/* Here on "/" we simply want to LIST all blog entries 
+ * we have... */
 app.get('/', function (req, res) {
     // get KEYS with *.meta only
     redis.keys('*.meta').then(function (result) {
@@ -92,7 +89,7 @@ app.get('/post/:postId', function (req, res) {
 
 redis.on('ready', function (err, redisclient) {
     // Let's boot up the server :-)
-    var server = app.listen(3000, function () {
+    var server = app.listen(8080, function () {
         var host = server.address().address;
         var port = server.address().port;
 
