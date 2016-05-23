@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>cassandra-lab</title>
+<link rel='stylesheet' href='/stylesheet.css' />
+</head>
+<body>
+	<h1>Post details:</h1>
+
+	{{#post}}
+	<div>
+		<h2>{{title}}</h2>
+		<div>{{{body}}}</div>
+		<br />
+		<div class="left medium">
+			<b>Score:</b> {{score}}
+		</div>
+		<div class="left medium">
+			<b>Posted by:</b> {{ownername}}
+		</div>
+		<div class="left large">
+			<b>Post Date:</b> {{created}}
+		</div>
+	</div>
+	{{/post}}
+	<div class="clear" />
+	<br />
+	<hr />
+	<br />
+	<!--h2>Responses:</h2><br/ -->
+	<div>
+		{{#comments}}
+		<div>
+			<div>{{{body}}}</div>
+			<div>
+				<br />
+				<div class="left medium">
+					<b>Score:</b> {{score}}
+				</div>
+				<div class="left medium">
+					<b>Posted by:</b> {{ownername}}
+				</div>
+				<div class="left large">
+					<b>Post Date:</b> {{created}}
+				</div>
+			</div>
+		</div>
+		<div class="clear" />
+		<br />
+		<hr />
+		<br /> {{/comments}}
+	</div>
+</body>
+</html>

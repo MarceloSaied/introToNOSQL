@@ -1,0 +1,36 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  color: #888;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.left{
+	float:left;
+}
+
+.red {
+	color: red;
+}
+
+.small{
+	width:100px;
+	overflow:hidden;
+}
+
+.medium{
+	width:200px;
+	overflow:hidden;
+}
+
+.large{
+	width:400px;
+	overflow:hidden;
+}
+
+.clear {
+	clear:both;
+}

@@ -1,0 +1,20 @@
+{
+  "name": "nosql-handson-cassandra",
+  "version": "1.0.0",
+  "description": "NoSQL HandsOn Cassandra Lab",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Accenture for training purposes",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "express": "~4.13.3",
+    "hjs": "0.0.6",
+    "morgan": "~1.6.1",
+    "async": ">= 1.0.0",
+    "cassandra-driver": ">= 2.2.1"
+  }
+}

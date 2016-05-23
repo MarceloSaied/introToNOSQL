@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>cassandra-lab</title>
+<link rel='stylesheet' href='/stylesheet.css' />
+</head>
+<body>
+	<h1>This is the post list:</h1>
+	<p>Recently posted posts:</p>
+	<div>
+		<div>
+			<div class="left large">
+				<b>Title</b>
+			</div>
+			<div class="left medium"><b>Post Date</b></div>
+			<div class="left medium"><b>Posted By</b></div>
+		</div>
+		<div class="clear" />
+	</div>
+	<br/>
+	<div>
+		{{#keys}}
+		<div>
+			<div class="left large">
+				<a href='/user/post/{{id}}'>{{title}}</a>
+			</div>
+			<div class="left medium">{{created}}</div>
+			<div class="left medium">{{ownername}}</div>
+		</div>
+		<div class="clear" />
+		{{/keys}}
+	</div>
+</body>
+</html>
