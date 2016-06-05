@@ -1,0 +1,19 @@
+{
+  "name": "nosql-handson-neo4j",
+  "version": "1.0.0",
+  "description": "NoSQL HandsOn Neo4J Lab",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Accenture for training purposes",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "express": "~4.13.3",
+    "hjs": "0.0.6",
+    "seraph": "^0.13.3",
+    "morgan": "~1.6.1"
+  }
+}

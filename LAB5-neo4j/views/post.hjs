@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{vals.0.post.title}}</title>
+    <link rel="stylesheet" href="/stylesheet.css" />
+  </head>
+  <body>
+    <!-- we're getting an array, so get post from 0th entry -->
+    <h1>{{vals.0.post.title}}</h1>
+    <!-- unescaped body -->
+    {{{vals.0.post.body}}}
+    <h2>Comments & Responses</h2>
+    {{#vals}}
+    <ul>
+      <li>{{respcomm.text}}{{{respcomm.body}}}</li>
+    </ul>
+    {{/vals}}
+    <p>Back to <a href="../">Home</a></p>
+  </body>
+</html>
